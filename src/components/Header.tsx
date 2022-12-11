@@ -4,8 +4,8 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <Card>
-      <Typography variant='h1' align='center'>
+    <Card raised sx={{ marginTop: '1em'}}>
+      <Typography variant='h1' align='center' >
         im the header
       </Typography>
     </Card>

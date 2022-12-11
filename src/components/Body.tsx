@@ -1,12 +1,11 @@
 import React from 'react'
-import {Card, Typography} from '@mui/material';
+import {Card} from '@mui/material';
+import About from './About';
 
 const Body = () => {
   return (
-    <Card>
-      <Typography variant='h1' align='center'>
-        im the Body
-      </Typography>
+    <Card raised sx={{ marginTop: '1em'}}>
+      <About/>
     </Card>
   )
 }
