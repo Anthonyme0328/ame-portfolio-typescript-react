@@ -4,7 +4,7 @@ import About from './About';
 
 const Body = () => {
   return (
-    <Card raised sx={{ marginTop: '1em'}}>
+    <Card raised sx={{ marginTop: '1em', height: 'auto'}}>
       <About/>
     </Card>
   )

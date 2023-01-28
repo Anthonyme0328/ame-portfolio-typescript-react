@@ -1,83 +1,59 @@
 import React from 'react'
-import {Card, Fab, Grid, Tooltip, Typography} from '@mui/material'
-import EmailIcon from '@mui/icons-material/Email';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import {Card, Grid, Typography, Tooltip} from '@mui/material'
+
 //@ts-ignore
 import AmePic from '../images/AmePic.jpg'
+//@ts-ignore
+import MovingComponent from 'react-moving-text'
+
 
 const About = () => {
 
 
-  const handleClickGithub = () => {
-    window.open("https://github.com/Anthonyme0328");
-  };
-
-  const handleClickLinkedIn = () => {
-    window.open("https://www.linkedin.com/in/anthony-erickson-42621b1b9/");
-  };
-
 
   return (
-
-
     <Grid container spacing={2}>
-      <Grid item xs={6}>
-        <Grid container>
-          <Grid item xs={3}>
-            <img style={{margin: '.5em', boxShadow: '5px 10px #00000065'}} src={AmePic} alt='Pic of Me'/>
-          </Grid>
-
-          <Grid item xs={9}>
-            <Card raised sx={{margin: '1em'}}>
-              <Typography>
-                about me
-              </Typography>
-            </Card>
-          </Grid>
-        </Grid>
-
+      <Grid item xs={6} sm={6} md={6} lg={4} xl={4}>
+        <MovingComponent
+          type="popIn"
+          duration="950ms"
+          delay="0s"
+          direction="normal"
+          timing="linear"
+          iteration="1"
+          fillMode="forwards">
+            <Tooltip placement='right' title="What a Handsome Devil">
+              <img style={{margin: '.5em', boxShadow: '5px 10px #00000065'}} src={AmePic} alt='Pic of Me'/>
+            </Tooltip>
+        </MovingComponent>
       </Grid>
-
-      <Grid  item xs={6}>
-        <Card raised sx={{mt: '1em', mb: '1em'}}>
-
-          <Grid container >
-
-            <Grid item xs={4}>
-                <Typography align='center'>
-                  <Tooltip arrow placement='top' title='Send me an Email'>
-                    <Fab variant='circular'>
-                      <EmailIcon onClick={() => window.location.href = 'mailto:anthonymh14@hotmail.com' } fontSize='large'/>
-                    </Fab>
-                  </Tooltip>
-                </Typography>
-            </Grid>
-            
-            <Grid item xs={4}>
-                <Typography align='center'>
-                  <Tooltip arrow placement='top' title='Checkout my Github'>
-                    <Fab variant='circular'>
-                      <GitHubIcon onClick={handleClickGithub} fontSize='large'/>
-                    </Fab>
-                  </Tooltip>
-                </Typography>
-            </Grid>
-
-            <Grid item xs={4}>
-                <Typography align='center'>
-                  <Tooltip arrow placement='top' title='Take a look at my LinkedIn'>
-                    <Fab variant='circular'>
-                      <LinkedInIcon onClick={handleClickLinkedIn} fontSize='large'/>
-                    </Fab>
-                  </Tooltip>
-                </Typography>
-            </Grid>
-
-          </Grid>
-
+      <Grid item xs={6} sm={6} md={6} lg={8} xl={8}>
+        <Card raised sx={{margin: '1em', height: 'auto', ml: '6.5em'}}>
+          <MovingComponent
+            type="fadeInFromTop"
+            duration="700ms"
+            delay="0s"
+            direction="normal"
+            timing="linear"
+            iteration="1"
+            fillMode="both">
+              <Typography variant='h4' align='center' sx={{color: '#1e4ec7'}}>
+                About Me
+              </Typography> 
+          </MovingComponent>
+          <MovingComponent
+            type="fadeInFromBottom"
+            duration="700ms"
+            delay="0s"
+            direction="normal"
+            timing="linear"
+            iteration="1"
+            fillMode="both">
+              <Typography variant='body1' sx={{mt: '2em', ml: '.5em', mr: '.5em', fontFamily: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif'}}>
+                Hi my name is Anthony, I am a Full Stack developer with proven ability to excel in both autonomous and collaborative environments while staying focused on producing quality work under strict deadlines. I thoroughly enjoy creating Full Stack applications with an emphasis on mobile accessibility, quality back-end, and sound database design, and am eager to obtain a challenging position that will facilitate ongoing learning and expansion of my skillset. 
+              </Typography>
+          </MovingComponent>
         </Card>
-
       </Grid>
     </Grid>
   )
