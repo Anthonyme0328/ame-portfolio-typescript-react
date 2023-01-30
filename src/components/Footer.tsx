@@ -28,7 +28,7 @@ const Footer = () => {
   timing="linear"
   iteration="1"
   fillMode="forwards">
-    <Card raised sx={{m: 'auto', mt: '5em' , height: '5em', width: '25em', borderRadius: '25em', display: 'flex', justifySelf: 'center'  }}>
+    <Card raised sx={{m: 'auto', mt: '5em' , height: '5em', width: '25em', borderRadius: '25em', display: 'flex', justifySelf: 'center', border: 'solid', borderColor: '#EDF2F4'  }}>
       <Grid container >
         <Grid item xs={4}>
             <Typography align='center'>

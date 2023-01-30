@@ -23,12 +23,12 @@ const About = () => {
           iteration="1"
           fillMode="forwards">
             <Tooltip placement='right' title="What a Handsome Devil">
-              <img style={{margin: '.5em', boxShadow: '5px 10px #00000065'}} src={AmePic} alt='Pic of Me'/>
+              <img style={{margin: '.5em', boxShadow: '5px 10px #2A4849', border: 'solid', borderColor: '#EDF2F4'}} src={AmePic} alt='Pic of Me'/>
             </Tooltip>
         </MovingComponent>
       </Grid>
       <Grid item xs={6} sm={6} md={6} lg={8} xl={8}>
-        <Card raised sx={{margin: '1em', height: 'auto', ml: '6.5em'}}>
+        <Card raised sx={{margin: '1em', height: 'auto', ml: '6.5em', backgroundColor: '#426B69', border: 'solid', borderColor: '#EDF2F4'}}>
           <MovingComponent
             type="fadeInFromTop"
             duration="700ms"
@@ -37,7 +37,7 @@ const About = () => {
             timing="linear"
             iteration="1"
             fillMode="both">
-              <Typography variant='h4' align='center' sx={{color: '#1e4ec7'}}>
+              <Typography variant='h4' align='center' sx={{color: '#222E50'}}>
                 About Me
               </Typography> 
           </MovingComponent>

@@ -9,7 +9,7 @@ const Header = () => {
 
 
   return (
-    <Card raised sx={{ marginTop: '1em'}}>
+    <Card raised sx={{m: 'auto', mt: '0em', backgroundColor: '#426B69', width: '99%', border: 'solid', borderColor: '#EDF2F4'}}>
       <MovingText
         type="fadeInFromLeft"
         duration="2000ms"
@@ -18,7 +18,7 @@ const Header = () => {
         timing="linear"
         iteration="1"
         fillMode="forewards">
-          <Typography variant='h2' align='center' sx={{m: '.25em', color: '#1e4ec7'}}>
+          <Typography variant='h2' align='center' sx={{m: '.25em', color: '#222E50'}}>
             Anthony Erickson's Portfolio
           </Typography>
       </MovingText>
