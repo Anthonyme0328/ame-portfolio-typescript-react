@@ -1,4 +1,5 @@
 {
+  "homepage": "",
   "name": "ame-portfolio-typescript-react",
   "version": "0.1.0",
   "private": true,
@@ -23,6 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "",
+    "deploy": "",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -46,6 +49,7 @@
     ]
   },
   "devDependencies": {
-    "@types/animejs": "^3.1.7"
+    "@types/animejs": "^3.1.7",
+    "gh-pages": "^5.0.0"
   }
 }

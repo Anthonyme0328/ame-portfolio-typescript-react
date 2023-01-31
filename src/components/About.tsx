@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card, Grid, Typography, Tooltip} from '@mui/material'
+import {Card, Grid, Typography, Tooltip, Avatar} from '@mui/material'
 
 //@ts-ignore
 import AmePic from '../images/AmePic.jpg'
@@ -49,9 +49,10 @@ const About = () => {
             timing="linear"
             iteration="1"
             fillMode="both">
-              <Typography variant='body1' sx={{mt: '2em', ml: '.5em', mr: '.5em', fontFamily: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif'}}>
-                Hi my name is Anthony, I am a Full Stack developer with proven ability to excel in both autonomous and collaborative environments while staying focused on producing quality work under strict deadlines. I thoroughly enjoy creating Full Stack applications with an emphasis on mobile accessibility, quality back-end, and sound database design, and am eager to obtain a challenging position that will facilitate ongoing learning and expansion of my skillset. 
+              <Typography variant='body1' sx={{mt: '2em', ml: '.5em', mr: '.5em', mb: '1em', fontFamily: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif'}}>
+                Hi my name is Anthony, I am a Full Stack developer with proven ability to excel in both autonomous and collaborative environments while staying focused on producing quality work under strict deadlines. I thoroughly enjoy creating Full Stack applications with an emphasis on mobile accessibility, quality back-end, and sound database design, and am eager to obtain a challenging position that will facilitate ongoing learning and expansion of my skillset.
               </Typography>
+              
           </MovingComponent>
         </Card>
       </Grid>

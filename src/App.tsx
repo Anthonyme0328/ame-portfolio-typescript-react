@@ -8,6 +8,7 @@ import Works from './components/Works';
 const App = () => {
   return (
     <div className="App" style={{backgroundColor: '#B5CA8D'}}>
+      <div style={{height: '10px'}}></div>
       <Header/>
       <Body/>
       <Works/>
