@@ -1,5 +1,6 @@
 import React from 'react'
-import {Card, Typography, CardHeader, Grid, CardMedia, CardContent, Button} from '@mui/material'
+import {Card, Typography, CardHeader, Grid, CardMedia, CardContent, Button, Fab, Tooltip} from '@mui/material'
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 //@ts-ignore
 import PsyGame from '../images/PsyGame.png'
@@ -15,31 +16,56 @@ import DND from '../images/dndStart.png'
 //@ts-ignore
 import MovingComponent from 'react-moving-text'
 
+
 const Works = () => {
 
   const handleClickOne = () => {
     window.open('https://anthonyme0328.github.io/WordGuessGame/')
   }
+  const handleClickGithubPSY = () => {
+    window.open('https://github.com/Anthonyme0328/WordGuessGame')
+  }
+
 
   const handleClickTwo = () => {
     window.open('https://anthonyme0328.github.io/Rock_Paper_Scissors_Game/')
   }
+  const handleClickGithubRPS = () => {
+    window.open('https://github.com/Anthonyme0328/WordGuessGame')
+  }
+
 
   const handleClickThree = () => {
     window.open('https://anthonyme0328.github.io/StoreSplash1/')
   }
+  const handleClickGithubSP = () => {
+    window.open('https://github.com/Anthonyme0328/WordGuessGame')
+  }
+
 
   const handleClickFour = () => {
     window.open('https://anthonyme0328.github.io/to-do-list/')
   }
+  const handleClickGithubTDL = () => {
+    window.open('https://github.com/Anthonyme0328/WordGuessGame')
+  }
+
 
   const handleClickFive = () => {
     window.open('https://anthonyme0328.github.io/dndStartScreen/')
   }
+  const handleClickGithubDND = () => {
+    window.open('https://github.com/Anthonyme0328/WordGuessGame')
+  }
+
 
   const handleClickSix = () => {
     window.open('https://anthonyme0328.github.io/WordGuessGame/')
   }
+  const handleClickGithubOther = () => {
+    window.open('https://github.com/Anthonyme0328/WordGuessGame')
+  }
+
 
 return (
   <>
@@ -66,7 +92,12 @@ return (
                     JavaScript game that uses DOM manipulation to choose a secret key and after you guess the screen updates with your selections and how many turns you have left. You only get so many chances to try and beat the computer! Check out the CSS animations at the bottom.
                   </Typography>
               </CardContent> 
-              <Button sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickOne}>Click</Button>
+              <Button title='Link to the live app' sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickOne}>Click</Button>
+              <Tooltip placement='top' title='Link to the code on Github'>
+                <Fab size='small' variant='circular' sx={{mt: '1em', mb: '1em', mr: '1em', float: 'right'}}>
+                    <GitHubIcon onClick={handleClickGithubPSY} fontSize='small'/>
+                </Fab>
+              </Tooltip>
             </Card>
         </MovingComponent>
       </Grid>
@@ -91,7 +122,12 @@ return (
                 Have you seen BBT? Ever wanted to give this game a shot? Play against the computer and see if you can rack up a high enough score. Use's JavaScript and advanced CSS to manipulate the DOM and add some fun effects to the page! Bazinga!
               </Typography>
             </CardContent>
-            <Button sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickTwo}>Click</Button>
+            <Button title='Link to the live app' sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickTwo}>Click</Button>
+            <Tooltip placement='top' title='Link to the code on Github'>
+                <Fab size='small' variant='circular' sx={{mt: '1em', mb: '1em', mr: '1em', float: 'right'}}>
+                    <GitHubIcon onClick={handleClickGithubRPS} fontSize='small'/>
+                </Fab>
+            </Tooltip>
             </Card>
         </MovingComponent>
         </Grid>
@@ -116,7 +152,12 @@ return (
                 This is a mock up of a splash page for an online organic farm retailer. Custom made cards host come of the potential produce you can purchase. Hover over the options to see some advanced mathmatical CSS. Vanilla JavaScript used only instead of the assistance of a component based library.
               </Typography>
             </CardContent>
-            <Button sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickThree}>Click</Button>
+            <Button title='Link to the live app' sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickThree}>Click</Button>
+            <Tooltip placement='top' title='Link to the code on Github'>
+                <Fab size='small' variant='circular' sx={{mt: '1em', mb: '1em', mr: '1em', float: 'right'}}>
+                    <GitHubIcon onClick={handleClickGithubSP} fontSize='small'/>
+                </Fab>
+            </Tooltip>
             </Card>
         </MovingComponent>
         </Grid>
@@ -141,7 +182,12 @@ return (
                 Need to track your daily tasks and To Do's? This task tracker allows you to add and complete items. The list will reorganize itself alphabetically by completed and uncompleted tasks. Styled to look like a yellow notpad, with additional css animation and a hidded easter egg.
               </Typography>
             </CardContent>
-            <Button sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickFour}>Click</Button>
+            <Button title='Link to the live app' sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickFour}>Click</Button>
+            <Tooltip placement='top' title='Link to the code on Github'>
+                <Fab size='small' variant='circular' sx={{mt: '1em', mb: '1em', mr: '1em', float: 'right'}}>
+                    <GitHubIcon onClick={handleClickGithubTDL} fontSize='small'/>
+                </Fab>
+            </Tooltip>
             </Card>
         </MovingComponent>
       </Grid>
@@ -160,10 +206,15 @@ return (
             <CardMedia image={DND} title='Five' component='img'></CardMedia>
             <CardContent>
               <Typography>
-                Two
+                Reactive starter page for character select of a DND campaign. Click a character and have watch how the page reveals more info and resizes the remaining options. Just an interactive starter page that will be part of a larger app for game custumization and first time play throughs. 
               </Typography>
             </CardContent>
-            <Button sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickFive}>Click</Button>
+            <Button title='Link to the live app' sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickFive}>Click</Button>
+            <Tooltip placement='top' title='Link to the code on Github'>
+                <Fab size='small' variant='circular' sx={{mt: '1em', mb: '1em', mr: '1em', float: 'right'}}>
+                    <GitHubIcon onClick={handleClickGithubDND} fontSize='small'/>
+                </Fab>
+            </Tooltip>
             </Card>
         </MovingComponent>
       </Grid>
@@ -185,7 +236,12 @@ return (
                 Two
               </Typography>
             </CardContent>
-            <Button sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickSix}>Click</Button>
+            <Button title='Link to the live app' sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickSix}>Click</Button>
+            <Tooltip placement='top' title='Link to the code on Github'>
+                <Fab size='small' variant='circular' sx={{mt: '1em', mb: '1em', mr: '1em', float: 'right'}}>
+                    <GitHubIcon onClick={handleClickGithubOther} fontSize='small'/>
+                </Fab>
+            </Tooltip>
             </Card>
         </MovingComponent>
       </Grid>
