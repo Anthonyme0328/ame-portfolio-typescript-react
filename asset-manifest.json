@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/ame-portfolio-typescript-react/static/css/main.31d6cfe0.css",
-    "main.js": "/ame-portfolio-typescript-react/static/js/main.46813e1f.js",
+    "main.js": "/ame-portfolio-typescript-react/static/js/main.81d877f1.js",
     "static/media/dndStart.png": "/ame-portfolio-typescript-react/static/media/dndStart.1ca6142f010220b81385.png",
     "static/media/SplashStore.png": "/ame-portfolio-typescript-react/static/media/SplashStore.048cf4fdf0ef5d34a9e1.png",
     "static/media/RPS.png": "/ame-portfolio-typescript-react/static/media/RPS.4f2f46b47763e52d6f19.png",
     "static/media/PsyGame.png": "/ame-portfolio-typescript-react/static/media/PsyGame.721a697c25ea5a1b12bb.png",
+    "static/media/CT.png": "/ame-portfolio-typescript-react/static/media/CT.5609c575f9a2bf63a848.png",
     "static/media/toDo.png": "/ame-portfolio-typescript-react/static/media/toDo.790656ce61d5184b535d.png",
     "static/media/AmePic.jpg": "/ame-portfolio-typescript-react/static/media/AmePic.acfebd429ac0610f38ff.jpg",
     "index.html": "/ame-portfolio-typescript-react/index.html",
-    "main.46813e1f.js.map": "/ame-portfolio-typescript-react/static/js/main.46813e1f.js.map"
+    "main.81d877f1.js.map": "/ame-portfolio-typescript-react/static/js/main.81d877f1.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.46813e1f.js"
+    "static/js/main.81d877f1.js"
   ]
 }
