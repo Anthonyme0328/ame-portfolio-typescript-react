@@ -12,6 +12,8 @@ import OSS from '../images/SplashStore.png'
 import ToDo from '../images/toDo.png'
 //@ts-ignore
 import DND from '../images/dndStart.png'
+//@ts-ignore
+import CT from '../images/CT.png'
 
 //@ts-ignore
 import MovingComponent from 'react-moving-text'
@@ -60,10 +62,10 @@ const Works = () => {
 
 
   const handleClickSix = () => {
-    window.open('https://anthonyme0328.github.io/WordGuessGame/')
+    window.open('https://anthonyme0328.github.io/crypto_tracker/')
   }
-  const handleClickGithubOther = () => {
-    window.open('https://github.com/Anthonyme0328/WordGuessGame')
+  const handleClickGithubCT = () => {
+    window.open('https://github.com/Anthonyme0328/crypto_tracker')
   }
 
 
@@ -82,7 +84,7 @@ return (
           timing="linear"
           iteration="1"
           fillMode="forwards">
-            <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4'}}>
+            <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4', boxShadow: '5px 10px black'}}>
               <CardMedia image={PsyGame} title='Psy Game' component='img' ></CardMedia>
               <CardContent>
                 <Typography variant='h5'>
@@ -112,7 +114,7 @@ return (
           timing="linear"
           iteration="1"
           fillMode="forwards">
-            <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4'}}>
+            <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4',  boxShadow: '5px 10px black'}}>
             <CardMedia image={RPS} title='Rock Paper Scissors' component='img'></CardMedia>
             <CardContent>
             <Typography variant='h5'>
@@ -142,7 +144,7 @@ return (
           timing="linear"
           iteration="1"
           fillMode="forwards">
-            <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4'}}>
+            <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4',  boxShadow: '5px 10px black'}}>
             <CardMedia image={OSS} title='Oganic Store Splash' component='img'></CardMedia>
             <CardContent>
             <Typography variant='h5'>
@@ -172,8 +174,8 @@ return (
           timing="linear"
           iteration="1"
           fillMode="forwards">
-            <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4'}}>
-            <CardMedia image={ToDo} title='Four' component='img'></CardMedia>
+            <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4',  boxShadow: '5px 10px black'}}>
+            <CardMedia image={ToDo} title='To Do List' component='img'></CardMedia>
             <CardContent>
             <Typography variant='h5'>
                 To Do List
@@ -202,8 +204,8 @@ return (
           timing="linear"
           iteration="1"
           fillMode="forwards">
-            <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4'}}>
-            <CardMedia image={DND} title='Five' component='img'></CardMedia>
+            <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4',  boxShadow: '5px 10px black'}}>
+            <CardMedia image={DND} title='DND Screen' component='img'></CardMedia>
             <CardContent>
               <Typography>
                 Reactive starter page for character select of a DND campaign. Click a character and have watch how the page reveals more info and resizes the remaining options. Just an interactive starter page that will be part of a larger app for game custumization and first time play throughs. 
@@ -229,17 +231,17 @@ return (
           timing="linear"
           iteration="1"
           fillMode="forwards">
-            <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4'}}>
-            <CardMedia image='' title='Six'></CardMedia>
+            <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4',  boxShadow: '5px 10px black'}}>
+            <CardMedia image={CT} title='crypto traker' component='img'></CardMedia>
             <CardContent>
               <Typography>
-                Two
+                An app that allows you to track and see the price, websites, social media, and more of your favorite Crypto Currencies. Refine your seach by typing in a currency you would wish to view and the page will update its contents in real time. Open source API and Axios used.
               </Typography>
             </CardContent>
             <Button title='Link to the live app' sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickSix}>Click</Button>
             <Tooltip placement='top' title='Link to the code on Github'>
                 <Fab size='small' variant='circular' sx={{mt: '1em', mb: '1em', mr: '1em', float: 'right'}}>
-                    <GitHubIcon onClick={handleClickGithubOther} fontSize='small'/>
+                    <GitHubIcon onClick={handleClickGithubCT} fontSize='small'/>
                 </Fab>
             </Tooltip>
             </Card>

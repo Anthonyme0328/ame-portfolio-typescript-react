@@ -7,7 +7,7 @@ import Works from './components/Works';
 
 const App = () => {
   return (
-    <div className="App" style={{backgroundColor: '#B5CA8D'}}>
+    <div className="App" style={{backgroundColor: '#016FB9'}}>
       <div style={{height: '10px'}}></div>
       <Header/>
       <Body/>

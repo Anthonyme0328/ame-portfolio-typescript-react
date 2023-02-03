@@ -28,7 +28,7 @@ const About = () => {
         </MovingComponent>
       </Grid>
       <Grid item xs={6} sm={6} md={6} lg={8} xl={8}>
-        <Card raised sx={{margin: '1em', height: 'auto', ml: '6.5em', backgroundColor: '#426B69', border: 'solid', borderColor: '#EDF2F4'}}>
+        <Card raised sx={{margin: '1em', height: 'auto', ml: '6.5em', backgroundColor: '#02A2BA', border: 'solid', borderColor: '#EDF2F4'}}>
           <MovingComponent
             type="fadeInFromTop"
             duration="700ms"
