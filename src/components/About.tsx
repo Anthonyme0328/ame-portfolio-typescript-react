@@ -23,7 +23,7 @@ const About = () => {
           iteration="1"
           fillMode="forwards">
             <Tooltip placement='right' title="What a Handsome Devil">
-              <img style={{margin: '.5em', boxShadow: '5px 10px #2A4849', border: 'solid', borderColor: '#EDF2F4'}} src={AmePic} alt='Pic of Me'/>
+              <img style={{margin: '.5em', boxShadow: '5px 10px #2A4849', border: 'solid', borderColor: '#EDF2F4', borderRadius: '5px'}} src={AmePic} alt='Pic of Me'/>
             </Tooltip>
         </MovingComponent>
       </Grid>

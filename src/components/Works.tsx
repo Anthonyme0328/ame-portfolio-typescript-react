@@ -3,13 +3,13 @@ import {Card, Typography, CardHeader, Grid, CardMedia, CardContent, Button, Fab,
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 //@ts-ignore
-import PsyGame from '../images/PsyGame.png'
+import WLC from '../images/WLC.png'
 //@ts-ignore
 import RPS from '../images/RPS.png'
 //@ts-ignore
 import OSS from '../images/SplashStore.png'
 //@ts-ignore
-import ToDo from '../images/toDo.png'
+import TDR from '../images/TDR.png'
 //@ts-ignore
 import DND from '../images/dndStart.png'
 //@ts-ignore
@@ -22,10 +22,10 @@ import MovingComponent from 'react-moving-text'
 const Works = () => {
 
   const handleClickOne = () => {
-    window.open('https://anthonyme0328.github.io/WordGuessGame/')
+    window.open('https://anthonyme0328.github.io/wordle-esk-clone/')
   }
-  const handleClickGithubPSY = () => {
-    window.open('https://github.com/Anthonyme0328/WordGuessGame')
+  const handleClickGithubWLC = () => {
+    window.open('https://github.com/Anthonyme0328/wordle-esk-clone')
   }
 
 
@@ -46,10 +46,10 @@ const Works = () => {
 
 
   const handleClickFour = () => {
-    window.open('https://anthonyme0328.github.io/to-do-list/')
+    window.open('https://anthonyme0328.github.io/to_do_react/')
   }
   const handleClickGithubTDL = () => {
-    window.open('https://github.com/Anthonyme0328/WordGuessGame')
+    window.open('https://github.com/Anthonyme0328/to_do_react')
   }
 
 
@@ -85,19 +85,19 @@ return (
           iteration="1"
           fillMode="forwards">
             <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4', boxShadow: '5px 10px black'}}>
-              <CardMedia image={PsyGame} title='Psy Game' component='img' ></CardMedia>
+              <CardMedia image={WLC} title='Psy Game' component='img' sx={{maxHeight: '233px'}}></CardMedia>
               <CardContent>
                 <Typography variant='h5'>
-                  Psychic Game
+                  Wordle Like Clone
                 </Typography>
                   <Typography variant='body1'>
-                    JavaScript game that uses DOM manipulation to choose a secret key and after you guess the screen updates with your selections and how many turns you have left. You only get so many chances to try and beat the computer! Check out the CSS animations at the bottom.
+                    In this React Wordle Clone, you can play your favorite game an unlimited amount times. You get four chances to guess a five letter word. The page, after your guess will black out incorrect keys and you can use either you keyboard or click on the keys on the page. Try it out see if you can win!!
                   </Typography>
               </CardContent> 
               <Button title='Link to the live app' sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickOne}>Click</Button>
               <Tooltip placement='top' title='Link to the code on Github'>
                 <Fab size='small' variant='circular' sx={{mt: '1em', mb: '1em', mr: '1em', float: 'right'}}>
-                    <GitHubIcon onClick={handleClickGithubPSY} fontSize='small'/>
+                    <GitHubIcon onClick={handleClickGithubWLC} fontSize='small'/>
                 </Fab>
               </Tooltip>
             </Card>
@@ -175,13 +175,13 @@ return (
           iteration="1"
           fillMode="forwards">
             <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4',  boxShadow: '5px 10px black'}}>
-            <CardMedia image={ToDo} title='To Do List' component='img'></CardMedia>
+            <CardMedia image={TDR} title='To Do List' component='img' sx={{maxHeight: '233px'}}></CardMedia>
             <CardContent>
             <Typography variant='h5'>
                 To Do List
                 </Typography>
               <Typography>
-                Need to track your daily tasks and To Do's? This task tracker allows you to add and complete items. The list will reorganize itself alphabetically by completed and uncompleted tasks. Styled to look like a yellow notpad, with additional css animation and a hidded easter egg.
+                Need to track your daily tasks and To Do's? This react based to do tracker allows you to create  a to do, a date, set a reminder, and once it is completed remove it from the list. The page will readjust its size when items are added and removed. Double click an item to remove or add a reminder.
               </Typography>
             </CardContent>
             <Button title='Link to the live app' sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickFour}>Click</Button>
