@@ -85,13 +85,13 @@ return (
           iteration="1"
           fillMode="forwards">
             <Card raised sx={{ marginTop: '1em', width: '30em', height: 'auto', ml: 'auto', mr: 'auto', border: 'solid', borderColor: '#EDF2F4', boxShadow: '5px 10px black'}}>
-              <CardMedia image={WLC} title='Psy Game' component='img' sx={{maxHeight: '233px'}}></CardMedia>
+              <CardMedia image={WLC} title='Wordle Game' component='img' sx={{maxHeight: '233px'}}></CardMedia>
               <CardContent>
                 <Typography variant='h5'>
                   Wordle Like Clone
                 </Typography>
                   <Typography variant='body1'>
-                    In this React Wordle Clone, you can play your favorite game an unlimited amount times. You get four chances to guess a five letter word. The page, after your guess will black out incorrect keys and you can use either you keyboard or click on the keys on the page. Try it out see if you can win!!
+                    In this React Wordle Clone, you can play your favorite game an unlimited amount times. You get four chances to guess a five letter word. The page, after your guess will black out incorrect keys and you can use either your keyboard or click on the keys on the page. Try it out see if you can win!!
                   </Typography>
               </CardContent> 
               <Button title='Link to the live app' sx={{mt: '1em', mb: '1em', ml: '1em'}} size='small' variant='outlined' onClick={handleClickOne}>Click</Button>
